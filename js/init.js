@@ -14,7 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
   /*inicializar slider*/
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems);
+    var instances = M.Slider.init(elems,{
+      duration: 1
+    });
+  });
+
+  //inicializar imagenes
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
   });
 
   //inicialización del acordeon

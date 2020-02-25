@@ -10,3 +10,8 @@
 .card-content{
     height: 150px;
 }
+
+.materialboxed{
+    height: 450px;
+    width: 500px;
+}
