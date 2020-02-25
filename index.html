@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,111 +14,150 @@
 
 <body>
   <!--navegacion-->
-  <nav class="amber">
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo brown-text">Logo</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons brown-text">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html" class="brown-text">Sass</a></li>
-        <li><a href="badges.html" class="brown-text">Components</a></li>
-        <li><a href="collapsible.html" class="brown-text">Javascript</a></li>
-        <li><a href="mobile.html" class="brown-text">Mobile</a></li>
-      </ul>
-    </div>
-  </nav>
-
+  <div class="navbar-fixed">
+    <nav class="amber">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo brown-text">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons brown-text">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#drama" class="brown-text">Drama</a></li>
+          <li><a href="#policial" class="brown-text">Policial</a></li>
+          <li><a href="#psico" class="brown-text">Psicologicas</a></li>
+          <li><a href="#terror" class="brown-text">Terror</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
+    <li><a href="#drama" class="brown-text">Drama</a></li>
+    <li><a href="#policial" class="brown-text">Policial</a></li>
+    <li><a href="#psico" class="brown-text">Psicologicas</a></li>
+    <li><a href="#terror" class="brown-text">Terror</a></li>
   </ul>
-
+  <!--fin de navegación-->
   <main>
+    <!--Prallax-->
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/banner2.jpg"></div>
+    </div>
+    <!--Titulo-->
     <div class="row">
       <div class="container">
         <div class="col s12">
-          <h1 class="yellow-text darken-4">Usando Materialize</h1>
+          <h1 class="orange-text accent-3">Libros que eh leído</h1>
         </div>
       </div>
     </div>
-
+    <!--Slider-->
     <div class="row">
       <div class="container">
         <div class="cols s12">
           <div class="slider">
             <ul class="slides">
               <li>
-                <img src="img/perro1.jfif"> <!-- random image -->
+                <img src="img/AliciaPaisMaravillas.jpg">
                 <div class="caption center-align">
-                  <h3>This is our big Tagline!</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h3>Alicia en el país de las maravillas</h3>
+                  <h5 class="light grey-text text-lighten-3">Imaginario</h5>
                 </div>
               </li>
               <li>
-                <img src="img/perro2.jfif"> <!-- random image -->
+                <img src="img/principito.jpg">
                 <div class="caption left-align">
-                  <h3>Left Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h3>El principito</h3>
+                  <h5 class="light grey-text text-lighten-3">Empático</h5>
                 </div>
               </li>
               <li>
-                <img src="img/perro3.jfif"> <!-- random image -->
-                <div class="caption right-align">
-                  <h3>Right Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                <img src="img/paco.jpg">
+                <div class="caption left-align">
+                  <h3>Paco Yunque</h3>
+                  <h5 class="light grey-text text-lighten-3">Racismo</h5>
                 </div>
               </li>
             </ul>
           </div>
-
         </div>
       </div>
     </div>
-
+    <!--cards-->
     <div class="row">
       <div class="container">
-        <div class="col s12 m5">
-          <div class="card-panel amber darken-4">
-            <span class="black-text">I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively. I am similar to what is called a
-              panel in other frameworks.
-            </span>
-            <div>
-              <a class="deep-orange accent-3 waves-effect waves-light btn-large"><i
-                  class="material-icons left">cloud</i>Ver más...</a>
-            </div>
-          </div>
+        <div class="col s12">
+          <h1 class="orange-text accent-3">Otros libros</h1>
         </div>
-
-        <div class="col s12 m7">
+        <div class="col s12 m3 l3">
           <div class="card">
             <div class="card-image">
-              <img src="img/perro3.jfif">
-              <span class="card-title">Card Title</span>
+              <div class="responsive-img">
+                <img src="img/laLeyAmor.jpg">
+              </div>
             </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+            <div class="card-content yellow lighten-5 brown-text">
+              <b><span class="card-title">La ley del amor</span>
+                <p>Escritora mexicana Laural Esquivel.</p>
+              </b>
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
+          </div>
+        </div>
+        <div class="col s12 m3 l3">
+          <div class="card">
+            <div class="card-image">
+              <div class="responsive-img">
+                <img src="img/hush.jpg">
+              </div>
+            </div>
+            <div class="card-content yellow lighten-5 brown-text">
+              <b><span class="card-title">Hush hush</span>
+                <p>Autora Becca Fitzpatrick nacida en E.E.U.U</p>
+              </b>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3 l3">
+          <div class="card">
+            <div class="card-image">
+              <div class="responsive-img">
+                <img src="img/perdida.jpg">
+              </div>
+            </div>
+            <div class="card-content yellow lighten-5 brown-text">
+              <b><span class="card-title">Perdida</span>
+                <p>Escritora estadounidense Gillian Flynn.</p>
+              </b>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3 l3">
+          <div class="card">
+            <div class="card-image">
+              <div class="responsive-image">
+                <img src="img/tunel.jpg">
+              </div>
+            </div>
+            <div class="card-content yellow lighten-5 brown-text">
+              <b><span class="card-title">El túnel</span>
+                <p>Escritor argentino Ernesto Sabato.</p>
+              </b>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <!--imagenes-->
     <div class="row">
       <div class="container">
-        <div class="col s12 m4 l4">
-          <img class="responsive-img" src="img/frase1.jfif">
+        <div class="col s12">
+          <h1 class="orange-text accent-3">Imagenes de mi cuento favorito</h1>
         </div>
-        <div class="col s12 m4 l4">
-          <img class="responsive-img" src="img/frase2.jfif">
+        <div class="col s12 m4 l4 image">
+          <img class="responsive-img" src="img/principito1.jpg">
         </div>
-        <div class="col s12 m4 l4">
-          <img class="responsive-img" src="img/frase4.jfif">
+        <div class="col s12 m4 l4 image">
+          <img class="responsive-img" src="img/principito2.png">
+        </div>
+        <div class="col s12 m4 l4 image">
+          <img class="responsive-img" src="img/libroPrincipito.jpg">
         </div>
       </div>
     </div>
@@ -145,53 +185,7 @@
 
     <div class="row">
       <div class="container">
-        <div class="col s12 m6">
-          <table class="centered highlight responsive-table orange darken-1">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Item Name</th>
-                <th>Item Price</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>Alvin</td>
-                <td>Eclair</td>
-                <td>$0.87</td>
-              </tr>
-              <tr>
-                <td>Alan</td>
-                <td>Jellybean</td>
-                <td>$3.76</td>
-              </tr>
-              <tr>
-                <td>Jonathan</td>
-                <td>Lollipop</td>
-                <td>$7.00</td>
-              </tr>
-              <tr>
-                <td>Jonathan</td>
-                <td>Lollipop</td>
-                <td>$7.00</td>
-              </tr>
-              <tr>
-                <td>Jonathan</td>
-                <td>Lollipop</td>
-                <td>$7.00</td>
-              </tr>
-              <tr>
-                <td>Jonathan</td>
-                <td>Lollipop</td>
-                <td>$7.00</td>
-              </tr>
-            </tbody>
-          </table>
-
-        </div>
-
-        <div class="col s12 m6">
+        <div class="col s12 m12">
           <!-- Modal Trigger -->
           <a class="waves-effect waves-light deep-orange btn modal-trigger" href="#modal1">Modal</a>
 
@@ -261,7 +255,7 @@
               </div>
               <button class="btn waves-effect waves-light amber darken-4" type="submit" name="action">Submit
                 <i class="material-icons right">send</i>
-              </button> 
+              </button>
             </form>
           </div>
         </div>

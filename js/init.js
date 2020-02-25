@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Sidenav.init(elems);
   });
 
+  //inicialización de paralex
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+  });
+
+
   /*inicializar slider*/
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.slider');
